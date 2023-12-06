@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form test</title>
-        <hr>
-        <!--Add your code below-->
-        <form action="/practice.html" method="POST">
-            <label for="Name">Name:</label>
-            <input type="text" name="Name" id="Name" required>
+    <hr>
+    <!--Add your code below-->
+    <form action="/practice.html" method="POST">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <section class="url">
+            <label for="amount">URL:</label>
+            <input type="url" name="url" id="url" placeholder="Write the url of your">
             <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-            <br>
-            <section class="url">
-                <label for="amount">URL:</label>
-                <input type="url" name="url" id="url">
+            <section class="date">
+                <label for="date">date:</label>
+                <input type="date">
                 <br>
-                <label for="birthday">Birthday</label>
-                <input type="date" id="birthday" name="birthday">
-            </section>     
-            <section>
-                <label for="appt">select a time</label>
-                <input type="time" name="date and time" id="date and time">
-           <input type="time" name="appt" id="appt">
+                <label for="Time">time:</label>
+                <form action="/action_page.php"></form>
+                <input type="time" id="appt" name="appt">
+                <br>
             </section>
+            <section class="time">
+                <label for="time">Date and time of birth:</label>
+                <select name="bun" id="bun">>
+                    <option value="January">January</option>
+                    <option value="January">Feburay</option>
+                    <option value="January">March</option>
+                    <option value="January">April</option>
+                    <option value="January">May</option>
+                    <option value="January">June</option>
+                    <option value="January">July</option>
+                    <option value="January">August</option>
+                    <option value="January">September</option>
+                    <option value="January">October</option>
+                    <option value="January">November</option>
+                    <option value="January">December</option>
+                </select>
+                <form action="/action_page.php">
+                    <input type="time" id="appt" name="appt">
+            </section>
+
+            <section>
+                <label for="Time">Week:</label>
+                <select name="bun" id="bun">
+                    <option value="January">January</option>
+                    <option value="January">Monday</option>
+                    <option value="January">Tuesday</option>
+                    <option value="January">Wednesday</option>
+                    <option value="January">Thursday</option>
+                    <option value="January">Friday</option>
+                    <option value="January">Saturday</option>
+                    <option value="January">Sunday</option>
+                </select>
+            </section>
+
+            <label for="amount">number (min m-10, max 10)</label>
+            <input type="number" name="amount" id="amount" step="1" min="-10" max="10">
+            <br>
+            <div class="slider"><label for="fader">range (Rnage min 0, max 10:)</label></div>
+
+            <label for="telephone"> telephone:</label>
+            <input type="text" name="telephone" id="telephone">
+            <br>
+
+            <label for="search term">search term</label>
+            <input type="search" name="search-term" id="search">
+            <br>
+
+            <label for="Fav-color">Favourite Color:</label>
+            <input type="color">
+
+            <section class="submission">
+                <input type="submit">
+
+            </section>
+    </form>
+</head>
+</body>
